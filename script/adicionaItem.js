@@ -24,9 +24,11 @@ function adicionarItem(ulLista,input){
     
     item = classeDeProdutos;
 
+    
+    
     return item;
 
-
+    
 };
 
 function idAleatorio(){

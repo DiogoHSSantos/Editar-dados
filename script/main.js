@@ -20,25 +20,28 @@ const botaoLimparLista = document.querySelector('#limparLista');
 botaoAdicionar.addEventListener('click', ()=>{
     adicionarItem(ulLista,input);
 
-    let item = document.querySelectorAll('.produto')
+    // let item = document.querySelectorAll('.produto')
 
-    deletarItem(item)
+    const lista = document.querySelector('#lista');
+
+    deletarItem(lista)
+    
+    
+        
+    
+
+    
+
 
     input.value = '';
     
+
     
 });
    
 
-function deletarItem(item){
-    for(let i = 0 ; i < item.length ; i++){
-        let deletar =  item[i].querySelector('.botaoExcluir');
-        deletar.addEventListener('click',()=>{
-            return ulLista.removeChild(item[i]);
-        });
-    };
-}
 
-botaoLimparLista.addEventListener('click', ()=>{
-    ulLista.innerHTML = ''
-  });
+
+// botaoLimparLista.addEventListener('click', ()=>{
+//     ulLista.innerHTML = ''
+//   });
